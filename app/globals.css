@@ -5,3 +5,41 @@
 html,body,:root{
   height: 100%;
 }
+
+.back-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.overlay {
+  background: linear-gradient(356.01deg, rgba(22, 180, 67, 1) 6.22%, rgba(13, 13, 13, 0.3375) 23.39%, rgba(0, 0, 0, 1) 111.48%);
+  background-size: 200% 200%;
+  animation: gradientAnimation 1s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
