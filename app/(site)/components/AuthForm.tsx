@@ -47,7 +47,7 @@ const Authform = () => {
     }
 
     const socialAction = (action: string) => {
-        setIsLoading(true)
+        // setIsLoading(true)
         //next auth social sign in
     }
     return (
